@@ -1,0 +1,75 @@
+.experience__section {
+    height: 50vh;
+    width: 100%;
+    background-color: $white;
+    padding: 4rem 4rem;
+}
+
+.experience__page {
+    display: grid;
+    line-height: 2.5rem;
+
+    @media (min-width: 400px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    @media (min-width: 600px) {
+        padding: 0 14rem;
+        width: 100%;
+        column-gap: 0;
+    }
+
+    @media (min-width: 900px) {
+        padding: 0 20rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 40rem;
+    }
+
+    &-title {
+        font-size: 1.6rem;
+        color: $skyblue-color;
+        font-weight: bold;
+        align-self: center;
+        text-transform: uppercase;
+        padding: 4rem 0;
+
+
+        @media (min-width: 900px) {
+            padding: 4rem 4rem;
+        }
+
+        @media(min-width: 1200px) {
+            padding: 4rem 23rem;
+        }
+    }
+
+    &-first {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    &-year {
+        font-size: 1.1rem;
+
+        @media(min-width: 400px) {
+            text-align: center;
+        }
+
+        @media(min-width: 1200px) {
+            text-align: end;
+        }
+
+        #date {
+            color: $red-color;
+        }
+    }
+
+    &-profile {
+        font-size: 1.2rem;
+        color: $darkblue-color;
+    }
+
+
+}
