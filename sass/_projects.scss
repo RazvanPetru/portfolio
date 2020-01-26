@@ -1,6 +1,6 @@
 .projects__section {
     height: 100%;
-    background-color: $white;
+    background-color: $base-color;
 }
 
 .projects__page {
@@ -33,12 +33,17 @@
         font-weight: bold;
         padding: 1rem 0;
         color: $red-color;
+
+        a {
+            text-decoration: none;
+            color: $red-color;
+        }
     }
 
     &-1-description {
         font-size: 1.2rem;
         line-height: 2rem;
-        color: #393e46;
+        color: $white;
     }
 
     &-1-tools {
@@ -56,7 +61,7 @@
         margin-bottom: 4rem;
 
         &:nth-child(3) {
-            width: 7rem;
+            width: 7.5rem;
         }
 
         &:nth-child(2) {
@@ -101,6 +106,6 @@
     }
 
     @media (min-width: 1200px) {
-        padding: 2rem 43rem;
+        padding: 2rem 44rem;
     }
 }

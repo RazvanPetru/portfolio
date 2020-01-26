@@ -4,7 +4,6 @@ $base-color: #222831;
 $skyblue-color: #00adb5;
 $white: #eeeeee;
 $red-color: #e84545;
-$darkblue-color: #2b2e4a;
 
 *,
 *::before,
@@ -27,30 +26,17 @@ body {
 .first__section {
     height: 100%;
     width: 100%;
-    background-color: $white;
+    background-color: $base-color;
     padding: 2rem 1rem;
 
     .arrow {
-        position: fixed;
+        position: absolute;
         top: 95%;
-        right: 2%;
-        animation-name: arrowEffect;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: initial;
-
-        @keyframes arrowEffect {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(.5rem);
-            }
-        }
+        right: 50%;
 
         a {
             text-decoration: none;
-            color: $darkblue-color;
+            color: $white;
         }
     }
 
@@ -62,7 +48,7 @@ body {
 .first__page {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    color: #222831;
+    color: $white;
     padding: 0 1rem;
     animation-name: pageEffect1;
     animation-duration: .9s;
@@ -94,12 +80,16 @@ body {
 
         a {
             text-decoration: none;
-            color: $darkblue-color;
+            color: $white;
         }
 
         &:hover {
             background-color: $skyblue-color;
         }
+    }
+    
+    .ec {
+        padding: 1rem 1rem;
     }
 
     &-item {
@@ -179,12 +169,12 @@ body {
         &-item {
             padding: 1rem 14rem;
             width: 90rem;
-            font-size: 4rem;
+            font-size: 3.8rem;
             line-height: 5.5rem;
         }
 
         &-text3 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
         }
     }
 }

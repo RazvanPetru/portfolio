@@ -1,7 +1,7 @@
 .about__section {
     height: 100%;
     width: 100%;
-    background-color: $white;
+    background-color: $base-color;
 }
 .about__page {
     display: grid;
@@ -19,11 +19,13 @@
         grid-template-columns: 10rem 1fr;
         column-gap: 5rem;
         padding: 10rem 10rem;
+        width: 100rem;
     }
     @media (min-width: 1200px) {
         grid-template-columns: 10rem 1fr;
         column-gap: 5rem;
         padding: 15rem 30rem;
+        width: 100%;
     }
 }
 .about__me {
@@ -41,7 +43,7 @@
     align-self: start;
     font-size: 1.4rem;
     line-height: 3rem;
-    color: #222831;
+    color: $white;
     line-height: 3.5rem;
 }
 
