@@ -1,125 +1,126 @@
 .projects {
-    background-color: $base-color;
-    padding: 0 4rem;
+  background-color: $base-color;
+  padding: 0 4rem;
+  height: 100%;
 
-    &__page,
-    h1 {
-        text-transform: uppercase;
-        color: $skyblue-color;
-        letter-spacing: .1rem;
-        padding-top: 4rem;
-        padding-bottom: 2rem;
+  &__page,
+  h1 {
+    text-transform: uppercase;
+    color: $skyblue-color;
+    letter-spacing: 0.1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 
-        @media(min-width: 400px) {
-            padding-left: 0;
-        }
-
-        @media (min-width: 900px) {
-            padding-left: 2rem;
-        }
-
-        @media (min-width: 1200px) {
-            padding-left: 11.5rem;
-        }
+    @media (min-width: 400px) {
+      padding-left: 0;
     }
 
-    &__title {
-        margin: 1rem 0;
-        color: $skyblue-color;
-        letter-spacing: .1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 900px) {
+      padding-left: 2rem;
     }
 
-    &__container {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-bottom: 10rem;
+    @media (min-width: 1200px) {
+      padding-left: 11.5rem;
+    }
+  }
+
+  &__title {
+    margin: 1rem 0;
+    color: $skyblue-color;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10rem;
+
+    @include breakpoint(medium) {
+      flex-direction: row-reverse;
+      padding: 0 10rem;
+      padding-bottom: 10rem;
+    }
+
+    &-content,
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      flex-grow: 1;
+      flex-basis: 0;
+
+      &__description {
+        color: $white;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+        line-height: 3rem;
+        text-align: center;
 
         @include breakpoint(medium) {
-            flex-direction: row-reverse;
-            padding: 0 10rem;
-            padding-bottom: 10rem;
+          margin: 0 3rem;
+          font-size: 1.4rem;
+        }
+      }
+
+      &__lang,
+      .lang {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        &-content {
+          margin: 0 2rem;
+          padding: 0.4rem 0.8rem;
+          border: 1px solid $red-color;
+          color: $white;
+        }
+      }
+
+      &__buttons,
+      .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+
+        &__page {
+          text-decoration: none;
+          color: $white;
+          font-size: 1.2rem;
         }
 
-        &-content,
-        .container {
-            display: flex;
-            flex-direction: column;
-            padding-top: 1rem;
-            flex-grow: 1;
-            flex-basis: 0;
+        // visit btn
+        &-visit {
+          border: 1px solid $skyblue-color;
+          border-radius: 2rem;
+          padding: 1rem 3rem;
 
-            &__description {
-                color: $white;
-                font-size: 1.6rem;
-                letter-spacing: .1rem;
-                line-height: 3rem;
-                text-align: center;
-
-                @include breakpoint(medium) {
-                    margin: 0 3rem;
-                    font-size: 1.4rem;
-                }
-            }
-
-            &__lang,
-            .lang {
-                display: flex;
-                flex-direction: row;
-                margin: 0 auto;
-                margin-top: 2rem;
-
-                &-content {
-                    margin: 0 2rem;
-                    padding: .4rem .8rem;
-                    border: 1px solid $red-color;
-                    color: $white;
-                }
-            }
-
-            &__buttons,
-            .btn {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding-top: 3rem;
-
-                &__page {
-                    text-decoration: none;
-                    color: $white;
-                    font-size: 1.2rem;
-                }
-
-                // visit btn
-                &-visit {
-                    border: 1px solid $skyblue-color;
-                    border-radius: 2rem;
-                    padding: 1rem 3rem;
-
-                    &:hover {
-                        background-color: $skyblue-color;
-                    }
-                }
-
-                &-source {
-                    border: 1px solid $white;
-                    border-radius: 2rem;
-                    padding: 1rem 3rem;
-
-                    &:hover {
-                        background-color: $white;
-                        color: $black-color;
-                    }
-                }
-            }
+          &:hover {
+            background-color: $skyblue-color;
+          }
         }
 
-        &-img,
-        img {
-            width: 100%;
+        &-source {
+          border: 1px solid $white;
+          border-radius: 2rem;
+          padding: 1rem 3rem;
+
+          &:hover {
+            background-color: $white;
+            color: $black-color;
+          }
         }
+      }
     }
+
+    &-img,
+    img {
+      width: 100%;
+    }
+  }
 }

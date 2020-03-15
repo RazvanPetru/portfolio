@@ -441,13 +441,14 @@ body {
 .projects {
   background-color: #222831;
   padding: 0 4rem;
+  height: 100%;
 }
 
 .projects__page,
 .projects h1 {
   text-transform: uppercase;
   color: #00adb5;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
@@ -476,7 +477,7 @@ body {
 .projects__title {
   margin: 1rem 0;
   color: #00adb5;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +536,7 @@ body {
 .projects__container .container__description {
   color: #eeeeee;
   font-size: 1.6rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 3rem;
   text-align: center;
 }
@@ -559,7 +560,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 2rem;
 }
 
@@ -568,7 +571,7 @@ body {
 .projects__container .container__lang-content,
 .projects__container .container .lang-content {
   margin: 0 2rem;
-  padding: .4rem .8rem;
+  padding: 0.4rem 0.8rem;
   border: 1px solid #e84545;
   color: #eeeeee;
 }
