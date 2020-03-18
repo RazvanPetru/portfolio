@@ -653,6 +653,7 @@ body {
 .projects__container-content .lang,
 .projects__container .container__lang,
 .projects__container .container .lang {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,11 +661,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-top: 2rem;
 }
 
