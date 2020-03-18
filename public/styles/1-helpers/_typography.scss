@@ -1,0 +1,15 @@
+.title {
+    font-size: 1.8rem;
+
+    &:after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid $skyblue-color;
+        width: 100%;
+        padding-top: .5rem;
+
+        @include breakpoint(small) {
+            width: 0;
+        }
+    }
+}
