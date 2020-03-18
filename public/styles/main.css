@@ -93,7 +93,7 @@ body {
   list-style: none;
   background-color: #161a20;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: -120%;
   -webkit-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
@@ -106,6 +106,7 @@ body {
 }
 
 .nav__links.open {
+  z-index: 1;
   height: 100vh;
   width: 100%;
   top: 0;
