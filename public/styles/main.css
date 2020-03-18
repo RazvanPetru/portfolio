@@ -94,7 +94,7 @@ body {
   background-color: #161a20;
   position: fixed;
   z-index: 1;
-  top: -100%;
+  top: -120%;
   -webkit-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
 }
