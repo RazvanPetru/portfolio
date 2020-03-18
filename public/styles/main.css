@@ -16,13 +16,107 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-  background-color: #222831;
+  background-color: #161a20;
+}
+
+.nav__toggle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #00adb5;
+  border-radius: 50%;
+  border: 0.5px solid #00adb5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  z-index: 1;
+  -webkit-box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav__toggle .lines {
+  margin-top: 1.2rem;
+  margin-left: .8rem;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.nav__toggle .lines.is-active .line-1 {
+  opacity: 0;
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+}
+
+.nav__toggle .lines.is-active .line-2 {
+  -webkit-transform: translateY(0.2rem) rotate(35deg);
+          transform: translateY(0.2rem) rotate(35deg);
+}
+
+.nav__toggle .lines.is-active .line-3 {
+  -webkit-transform: translateY(-0.4rem) rotate(-35deg);
+          transform: translateY(-0.4rem) rotate(-35deg);
+}
+
+.nav__toggle .line {
+  display: block;
+  max-width: 2.2rem;
+  height: .2rem;
+  border-radius: 2rem;
+  background-color: #eeeeee;
+  margin-bottom: .4rem;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.nav__toggle .line:nth-child(1) {
+  max-width: 1.4rem;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  background-color: #161a20;
+  position: fixed;
+  z-index: 1;
+  top: -100%;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.nav__links a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.nav__links.open {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .first__section {
   height: 100%;
   width: 100%;
-  background-color: #222831;
   padding: 2rem 1rem;
 }
 
@@ -196,7 +290,6 @@ body {
 .about__section {
   height: 100%;
   width: 100%;
-  background-color: #222831;
 }
 
 .about__page {
@@ -270,7 +363,6 @@ body {
 .experience__section {
   height: 50vh;
   width: 100%;
-  background-color: #222831;
   padding: 4rem 4rem;
 }
 
@@ -418,7 +510,6 @@ body {
 }
 
 .footer {
-  background-color: #222831;
   padding: 6rem 0 0 0;
   height: 100%;
 }
@@ -568,6 +659,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -578,7 +671,7 @@ body {
 .projects__container-content .lang-content,
 .projects__container .container__lang-content,
 .projects__container .container .lang-content {
-  margin: 0 2rem;
+  margin: .5rem 2rem;
   padding: 0.4rem 0.8rem;
   border: 1px solid #e84545;
   color: #eeeeee;
@@ -651,7 +744,6 @@ body {
 
 .skills__section {
   height: 100%;
-  background-color: #222831;
   padding: 3rem 4rem;
 }
 

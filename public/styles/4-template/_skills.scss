@@ -1,6 +1,5 @@
 .skills__section {
     height: 100%;
-    background-color: $base-color;
     padding: 3rem 4rem;
 }
 
@@ -24,16 +23,18 @@
             padding: 0 28rem;
         }
     }
+
     &-skill {
         padding: 4rem 1rem;
         font-size: 1.2rem;
         color: $white;
     }
-    
+
     @media (min-width: 400px) {
         grid-template-columns: repeat(3, 1fr);
         padding: 0 0rem;
     }
+
     @media (min-width: 600px) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5rem;
@@ -51,7 +52,7 @@
         column-gap: 5rem;
         padding: 0rem 40rem;
     }
-    
+
 }
 
 .bold__white {

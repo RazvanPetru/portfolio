@@ -1,8 +1,8 @@
 .about__section {
     height: 100%;
     width: 100%;
-    background-color: $base-color;
 }
+
 .about__page {
     display: grid;
     padding: 10rem 4rem;
@@ -21,6 +21,7 @@
         padding: 10rem 10rem;
         width: 100rem;
     }
+
     @media (min-width: 1200px) {
         grid-template-columns: 10rem 1fr;
         column-gap: 5rem;
@@ -28,6 +29,7 @@
         width: 100%;
     }
 }
+
 .about__me {
     align-self: start;
     font-size: 1.6rem;
@@ -39,6 +41,7 @@
         margin: 0 auto
     }
 }
+
 .about__description {
     align-self: start;
     font-size: 1.4rem;

@@ -19,10 +19,29 @@
     <link rel="stylesheet" href="./public/styles/main.css">
     <!-- JS LINK-->
     <script defer src="./public/js/scroll.js"></script>
+    <script defer src="./public/js/nav.js"></script>
 </head>
 
 <body>
-    <section class="first__section">
+
+    <nav class="nav">
+        <div class="nav__links">
+            <li class="nav__links-item"><a href="#home">Home</a></li>
+            <li class="nav__links-item"><a href="#about">About</a></li>
+            <li class="nav__links-item"><a href="#resume">Resume</a></li>
+            <li class="nav__links-item"><a href="#projects">Projects</a></li>
+        </div>
+        <div class="nav__toggle">
+            <div class="lines">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--HOME-->
+    <section class="first__section" id="home">
         <div class="arrow">
             <i class="small material-icons"><a href="#top">arrow_downward</a></i>
         </div>
@@ -45,7 +64,7 @@
     </section>
 
     <!--ABOUT SECTION-->
-    <section class="about__section">
+    <section class="about__section" id="about">
         <container class="about__page" data-aos="fade-up">
             <div class="about__me bold">
                 <p class="bold">About me</p>
@@ -67,7 +86,7 @@
 
     <!-- SKILLS SECTION-->
 
-    <section class="skills__section">
+    <section class="skills__section" id="skills">
         <div class="skills__page-title" data-aos="fade-up">
             <p>Skills</p>
         </div>
@@ -98,7 +117,7 @@
 
     <!-- EXPERIENCE SECTION-->
 
-    <section class="experience__section">
+    <section class="experience__section" id="experience">
         <div class="experience__page-title" data-aos="fade-up">
             <p>experience</p>
         </div>
@@ -116,7 +135,7 @@
 
         <!-- MY RESUME -->
 
-        <container class="resume" data-aos="fade-up">
+        <container class="resume" data-aos="fade-up" id="resume">
             <div class="my__resume">
                 <p class="my__resume-link">
                     <a href="#">View My Resume</a><span class="resume__ec ec ec-point-right"></span>
@@ -127,7 +146,7 @@
 
     <!--  PROJECTS -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects__page">
             <h1>projects</h1>
         </div>
@@ -177,6 +196,8 @@
                     <div class="lang-content">HTML</div>
                     <div class="lang-content">(S)CSS</div>
                     <div class="lang-content">JAVASCRIPT</div>
+                    <div class="lang-content">NODE JS</div>
+                    <div class="lang-content">MONGODB</div>
                 </div>
                 <div class="container__buttons btn">
                     <a class="btn__page btn-visit" href="https://cybsecc.herokuapp.com/"><i class="fas fa-link"></i>
@@ -192,7 +213,7 @@
             </div>
         </div>
 
-                <!--TO-DO APP-->
+        <!--TO-DO APP-->
         <div class="projects__title">
             <h1>TO-DO APP</h1>
         </div>
@@ -224,7 +245,7 @@
 
         <!--TIPS CALCULATOR-->
         <div class="projects__title">
-            <h1>CybSec Landing-Page</h1>
+            <h1>tips calculator</h1>
         </div>
         <div class="projects__container">
             <div class="projects__container-content container">

@@ -73,11 +73,12 @@
       .lang {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 2rem;
 
         &-content {
-          margin: 0 2rem;
+          margin: .5rem 2rem;
           padding: 0.4rem 0.8rem;
           border: 1px solid $red-color;
           color: $white;
