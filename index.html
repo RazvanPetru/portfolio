@@ -19,17 +19,17 @@
     <link rel="stylesheet" href="./public/styles/main.css">
     <!-- JS LINK-->
     <script defer src="./public/js/scroll.js"></script>
-    <script defer src="./public/js/nav.js"></script>
+    <script defer src="./public/js/index.js"></script>
 </head>
 
 <body>
 
     <nav class="nav">
         <div class="nav__links">
-            <li class="nav__links-item"><a href="#home">Home</a></li>
-            <li class="nav__links-item"><a href="#about">About</a></li>
-            <li class="nav__links-item"><a href="#resume">Resume</a></li>
-            <li class="nav__links-item"><a href="#projects">Projects</a></li>
+            <li class="nav__links-item"><a onclick="scrollSmoothTo('home')">Home</a></li>
+            <li class="nav__links-item"><a onclick="scrollSmoothTo('about')">About</a></li>
+            <li class="nav__links-item"><a onclick="scrollSmoothTo('resume')">Resume</a></li>
+            <li class="nav__links-item"><a onclick="scrollSmoothTo('projects')">Projects</a></li>
         </div>
         <div class="nav__toggle">
             <div class="lines">
@@ -142,7 +142,7 @@
         <container class="resume" data-aos="fade-up" id="resume">
             <div class="my__resume">
                 <p class="my__resume-link">
-                    <a href="#">View My Resume</a><span class="resume__ec ec ec-point-right"></span>
+                    <a href="./views/resume.pdf">View My Resume</a><span class="resume__ec ec ec-point-right"></span>
                 </p>
             </div>
         </container>

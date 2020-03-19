@@ -9,6 +9,9 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // routes
+const resume = require('./routes/resume');
+
+
 
 // first page && 404 page
 app.get('/', (req, res) => {

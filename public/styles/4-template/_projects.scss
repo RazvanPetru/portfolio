@@ -74,12 +74,9 @@
       &__lang,
       .lang {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
-        flex-flow: row wrap;
-        align-content: flex-start;
         margin-top: 2rem;
 
         &-content {

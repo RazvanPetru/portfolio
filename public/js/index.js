@@ -15,3 +15,11 @@ for (let i = 0; i < items.length; i++) {
         hamburger.classList.remove('is-active');
     });
 }
+
+function scrollSmoothTo(elementId) {
+    var element = document.getElementById(elementId);
+    element.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth'
+    });
+}
