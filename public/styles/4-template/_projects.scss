@@ -71,13 +71,14 @@
 
       &__lang,
       .lang {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 12rem);
+        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
         margin-top: 2rem;
 
         &-content {
+          text-align: center;
           margin: .5rem 2rem;
           padding: 0.4rem 0.8rem;
           border: 1px solid $red-color;

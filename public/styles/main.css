@@ -268,18 +268,16 @@ body {
 .projects__container-content .lang,
 .projects__container .container__lang,
 .projects__container .container .lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 12rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 2rem;
 }
 
@@ -287,6 +285,7 @@ body {
 .projects__container-content .lang-content,
 .projects__container .container__lang-content,
 .projects__container .container .lang-content {
+  text-align: center;
   margin: .5rem 2rem;
   padding: 0.4rem 0.8rem;
   border: 1px solid #e84545;
@@ -592,50 +591,50 @@ body {
   padding: 6rem 0;
 }
 
-.my__resume-link,
-.resume__ec {
-  font-size: 1.6rem;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+.my__resume-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.my__resume-link:hover,
-.resume__ec:hover {
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
-}
-
-.my__resume-link a,
-.resume__ec a {
+.my__resume-link a {
   text-decoration: none;
-  color: #e84545;
-}
-
-.my__resume-link .resume__ec,
-.resume__ec .resume__ec {
-  padding-left: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  color: #eeeeee;
 }
 
 @media (min-width: 600px) {
-  .my__resume-link,
-  .resume__ec {
+  .my__resume-link {
     padding-left: 14rem;
   }
 }
 
 @media (min-width: 900px) {
-  .my__resume-link,
-  .resume__ec {
+  .my__resume-link {
     padding-left: 20rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .my__resume-link,
-  .resume__ec {
+  .my__resume-link {
     padding-left: 40rem;
   }
+}
+
+.my__resume-link:hover .resume__arrow {
+  padding-left: 1.8rem;
+}
+
+.resume__arrow {
+  padding-left: 1.2rem;
+  font-size: 2rem;
+  color: #e84545;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .footer {

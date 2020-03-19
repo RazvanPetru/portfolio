@@ -80,23 +80,15 @@
     padding: 6rem 0;
 }
 
-.my__resume-link,
-.resume__ec {
-    font-size: 1.6rem;
-    transition: all .5s ease-in-out;
+.my__resume-link {
+    display: flex;
+    flex-direction: row;
 
-    &:hover {
-        transform: translateX(1rem);
-    }
 
     a {
         text-decoration: none;
-        color: $red-color;
-    }
-
-    .resume__ec {
-        padding-left: 1rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
+        color: $white;
     }
 
     @media (min-width: 600px) {
@@ -110,4 +102,15 @@
     @media (min-width: 1200px) {
         padding-left: 40rem;
     }
+}
+
+.my__resume-link:hover .resume__arrow {
+    padding-left: 1.8rem;
+}
+
+.resume__arrow {
+    padding-left: 1.2rem;
+    font-size: 2rem;
+    color: $red-color;
+    transition: all .3s ease-in;
 }
