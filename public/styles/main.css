@@ -54,7 +54,7 @@ body {
 }
 
 .nav__toggle .lines {
-  margin-top: 1.2rem;
+  margin-top: 1.15rem;
   margin-left: .8rem;
   cursor: pointer;
   -webkit-transition: all 1s ease-in-out;
@@ -270,8 +270,9 @@ body {
 .projects__container .container .lang {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (12rem)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 12rem);
+  -ms-grid-columns: (minmax(13rem, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
+  grid-auto-flow: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -382,15 +383,15 @@ body {
 }
 
 .error__text {
-  font-size: 18rem;
-  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
+  font-size: 16rem;
+  background-image: linear-gradient(107.2deg, #960f0f 10.6%, #f70000 91.1%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .error__btn {
   margin-top: 1.5rem;
-  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
+  background-image: linear-gradient(107.2deg, #960f0f 10.6%, #f70000 91.1%);
   width: 12rem;
   height: 3rem;
   display: -webkit-box;
@@ -406,8 +407,8 @@ body {
   color: #eeeeee;
   border-radius: 2rem;
   font-size: 1.2rem;
-  -webkit-box-shadow: 1px 1px 4px #5558da;
-          box-shadow: 1px 1px 4px #5558da;
+  -webkit-box-shadow: 1px 1px 4px #960f0f;
+          box-shadow: 1px 1px 4px #960f0f;
 }
 
 .error__desc {

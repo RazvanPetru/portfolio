@@ -72,7 +72,8 @@
       &__lang,
       .lang {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 12rem);
+        grid-template-columns: repeat(auto-fit, minmax(13rem, auto));
+        grid-auto-flow: row;
         align-items: center;
         justify-content: center;
         margin-top: 2rem;
