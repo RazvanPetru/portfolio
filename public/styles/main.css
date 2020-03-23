@@ -54,8 +54,8 @@ body {
 }
 
 .nav__toggle .lines {
-  margin-top: 1.15rem;
-  margin-left: .8rem;
+  margin-top: 1.2rem;
+  margin-left: .78rem;
   cursor: pointer;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -79,7 +79,7 @@ body {
 
 .nav__toggle .line {
   display: block;
-  max-width: 2.2rem;
+  width: 2.2rem;
   height: .2rem;
   border-radius: 2rem;
   background-color: #eeeeee;
@@ -150,7 +150,7 @@ body {
 }
 
 .projects__page,
-.projects h1 {
+.projects .title {
   text-transform: uppercase;
   color: #00adb5;
   letter-spacing: 0.1rem;
@@ -160,21 +160,21 @@ body {
 
 @media (min-width: 400px) {
   .projects__page,
-  .projects h1 {
+  .projects .title {
     padding-left: 0;
   }
 }
 
 @media (min-width: 900px) {
   .projects__page,
-  .projects h1 {
+  .projects .title {
     padding-left: 2rem;
   }
 }
 
 @media (min-width: 1200px) {
   .projects__page,
-  .projects h1 {
+  .projects .title {
     padding-left: 11.5rem;
   }
 }
@@ -193,9 +193,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+}
+
+.projects__title h1 {
+  text-transform: uppercase;
+  color: #00adb5;
+  letter-spacing: 0.1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 .projects__container {
@@ -669,13 +676,19 @@ body {
 
 .first__section .arrow {
   position: absolute;
-  top: 95%;
+  top: 90%;
   right: 50%;
 }
 
 .first__section .arrow a {
   text-decoration: none;
   color: #eeeeee;
+}
+
+@media screen and (min-width: 899px) {
+  .first__section .arrow {
+    top: 95%;
+  }
 }
 
 @media (min-width: 414px) {

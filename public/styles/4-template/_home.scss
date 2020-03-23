@@ -5,12 +5,16 @@
 
     .arrow {
         position: absolute;
-        top: 95%;
+        top: 90%;
         right: 50%;
 
         a {
             text-decoration: none;
             color: $white;
+        }
+
+        @include breakpoint(medium) {
+            top: 95%;
         }
     }
 

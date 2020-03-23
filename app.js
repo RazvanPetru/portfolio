@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(
-    bodyparser.urlencoded({
-        extended: false
-    })
+  bodyparser.urlencoded({
+    extended: false
+  })
 );
 // static files
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -20,11 +20,11 @@ app.use(resumeRoutes);
 
 // first page && 404 page
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.use((req, res) => {
-    res.status(404).sendFile(__dirname + '/views/404.html');
+  res.status(404).sendFile(__dirname + '/views/404.html');
 });
 
 // port

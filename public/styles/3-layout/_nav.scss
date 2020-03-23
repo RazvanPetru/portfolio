@@ -15,8 +15,8 @@
         box-shadow: 1px 3px 4px rgba(0, 0, 0, .4);
 
         .lines {
-            margin-top: 1.15rem;
-            margin-left: .8rem;
+            margin-top: 1.2rem;
+            margin-left: .78rem;
             cursor: pointer;
             transition: all 1s ease-in-out;
 
@@ -36,7 +36,7 @@
 
         .line {
             display: block;
-            max-width: 2.2rem;
+            width: 2.2rem;
             height: .2rem;
             border-radius: 2rem;
             background-color: $white;
