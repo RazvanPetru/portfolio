@@ -42,6 +42,6 @@ TweenMax.to('.overlay .overlay__desc', 2, {
 
 TweenMax.to('.overlay', 1, {
     delay: 1,
-    top: '-100%',
+    top: '-200%',
     ease: Expo.easeInOut
 });
