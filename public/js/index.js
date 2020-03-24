@@ -23,3 +23,25 @@ function scrollSmoothTo(elementId) {
         behavior: 'smooth'
     });
 }
+
+// GSAP EFFECTS
+
+TweenMax.to('.overlay .overlay__title', 2, {
+    delay: .3,
+    opacity: 0,
+    y: -60,
+    ease: Expo.easeInOut
+});
+
+TweenMax.to('.overlay .overlay__desc', 2, {
+    delay: .3,
+    opacity: 0,
+    y: -60,
+    ease: Expo.easeInOut
+});
+
+TweenMax.to('.overlay', 1, {
+    delay: 1,
+    top: '-100%',
+    ease: Expo.easeInOut
+});

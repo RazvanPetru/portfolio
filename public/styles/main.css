@@ -143,6 +143,40 @@ body {
   transition: all 1s ease-in;
 }
 
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #eeeeee;
+  color: #333333;
+  z-index: 1000;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__title {
+  font-size: 3rem;
+  letter-spacing: .2rem;
+}
+
+.overlay__desc {
+  padding-top: .3rem;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
 .projects {
   padding: 0 4rem;
   height: 100%;
