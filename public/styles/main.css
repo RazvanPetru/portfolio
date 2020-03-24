@@ -147,8 +147,8 @@ body {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-color: #eeeeee;
-  color: #333333;
+  background-color: #161a20;
+  color: #00adb5;
   z-index: 1000;
   top: 0;
   display: -webkit-box;
@@ -175,6 +175,7 @@ body {
   padding-top: .3rem;
   font-size: 1.2rem;
   letter-spacing: .1rem;
+  color: #eeeeee;
 }
 
 .projects {

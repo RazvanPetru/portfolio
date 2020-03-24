@@ -27,21 +27,21 @@ function scrollSmoothTo(elementId) {
 // GSAP EFFECTS
 
 TweenMax.to('.overlay .overlay__title', 2, {
-    delay: .3,
+    delay: .6,
     opacity: 0,
     y: -60,
     ease: Expo.easeInOut
 });
 
 TweenMax.to('.overlay .overlay__desc', 2, {
-    delay: .3,
+    delay: .6,
     opacity: 0,
     y: -60,
     ease: Expo.easeInOut
 });
 
 TweenMax.to('.overlay', 1, {
-    delay: 1,
+    delay: 1.4,
     top: '-200%',
     ease: Expo.easeInOut
 });
