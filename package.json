@@ -15,7 +15,7 @@
     "gsap": "^3.2.6",
     "jekyll": "^3.0.0-beta1",
     "minimist": "^1.2.5",
-    "node": "^13.10.1",
+    "node": "^13.11.0",
     "nodemon": "^2.0.2",
     "path": "^0.12.7",
     "scrollreveal": "^4.0.5"
