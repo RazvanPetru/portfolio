@@ -6,11 +6,12 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "start": "node app.js",
-    "start-server": "node app.js"
+    "build": "webpack --config prod.config.js"
   },
   "author": "razvan petru",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "express": "^4.17.1",
     "gsap": "^3.2.6",
     "jekyll": "^3.0.0-beta1",
@@ -21,6 +22,8 @@
     "scrollreveal": "^4.0.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
     "node-sass": "^4.13.1"
   }
 }

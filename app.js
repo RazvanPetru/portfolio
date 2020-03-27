@@ -10,15 +10,12 @@ app.use(
     extended: false
   })
 );
-// static files
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-// routes
 const resumeRoutes = require('./routes/resume');
 
 app.use(resumeRoutes);
 
-// first page && 404 page
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
