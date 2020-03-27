@@ -6,7 +6,6 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "start": "node app.js",
-    "build": "webpack --config prod.config.js"
   },
   "author": "razvan petru",
   "license": "ISC",

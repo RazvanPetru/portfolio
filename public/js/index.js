@@ -30,7 +30,7 @@ for (let i = 0; i < btn.length; i++) {
         TweenMax.from('.container__btn', .3, {
             delay: .1,
             opacity: 0,
-            y: -10,
+            y: 10,
             ease: Expo.easeInOut
         })
     })
