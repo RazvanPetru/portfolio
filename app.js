@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   bodyparser.urlencoded({
-    extended: false
+    extended: true
   })
 );
 app.use('/public', express.static(path.join(__dirname, 'public')));

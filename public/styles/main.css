@@ -305,6 +305,9 @@ body {
   .projects__container .container__description {
     margin: 0 3rem;
     font-size: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -419,10 +422,17 @@ body {
   border-radius: 2rem;
   color: #00adb5;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .container__btn:focus {
   outline: 0;
+}
+
+@media screen and (min-width: 899px) {
+  .container__btn {
+    display: none;
+  }
 }
 
 .container-error {
