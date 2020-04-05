@@ -24,6 +24,12 @@ app.get('/.well-known/acme-challenge/N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc
   res.send('N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc.ket2r9uGNomFP5YxPui73gw3GW3DMvsBgCRiPnx8Q-s')
 })
 
+if (process.env.LE_URL && process.env.LE_CONTENT) {
+  app.get(process.env.LE_URL, function (req, res) {
+    return res.send(process.env.LE_CONTENT)
+  });
+}
+
 app.use((req, res) => {
   res.status(404).sendFile(__dirname + '/views/404.html');
 });
