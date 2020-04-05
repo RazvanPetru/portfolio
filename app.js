@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/.well-known/acme-challenge/GI7tcccyjZFEK2HtXqcqN1BR_sxPOLXplm_zyAy-cf4', function (req, res) {
-  res.send('GI7tcccyjZFEK2HtXqcqN1BR_sxPOLXplm_zyAy-cf4.ket2r9uGNomFP5YxPui73gw3GW3DMvsBgCRiPnx8Q-s')
+app.get('/.well-known/acme-challenge/N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc', function (req, res) {
+  res.send('N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc.ket2r9uGNomFP5YxPui73gw3GW3DMvsBgCRiPnx8Q-s')
 })
 
 app.use((req, res) => {
