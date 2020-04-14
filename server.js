@@ -41,5 +41,5 @@ app.use((req, res) => {
 
 // port
 app.listen(PORT, () => {
-  connsole.log(`Server on ${PORT}`);
+  console.log(`Server on ${PORT}`);
 });
