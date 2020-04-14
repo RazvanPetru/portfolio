@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   bodyparser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -20,13 +20,18 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/.well-known/acme-challenge/N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc', function (req, res) {
-  res.send('N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc.ket2r9uGNomFP5YxPui73gw3GW3DMvsBgCRiPnx8Q-s')
-})
+app.get(
+  '/.well-known/acme-challenge/N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc',
+  function (req, res) {
+    res.send(
+      'N9BOQDKW0V9_cSUaHuEg6Wq6wkUqxTkUApnr4t90qjc.ket2r9uGNomFP5YxPui73gw3GW3DMvsBgCRiPnx8Q-s'
+    );
+  }
+);
 
 if (process.env.LE_URL && process.env.LE_CONTENT) {
   app.get(process.env.LE_URL, function (req, res) {
-    return res.send(process.env.LE_CONTENT)
+    return res.send(process.env.LE_CONTENT);
   });
 }
 
@@ -35,4 +40,6 @@ app.use((req, res) => {
 });
 
 // port
-app.listen(PORT);
+app.listen(PORT, () => {
+  connsole.log(`Server on ${PORT}`);
+});

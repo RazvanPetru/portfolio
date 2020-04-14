@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "author": "razvan petru",
   "license": "ISC",
